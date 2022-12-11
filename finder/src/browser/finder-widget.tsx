@@ -8,11 +8,37 @@ import { ReactWidget } from "@theia/core/lib/browser/widgets/react-widget";
 import { MessageService } from "@theia/core";
 import { Message } from "@theia/core/lib/browser";
 import TicketForm from "../components/ticketForm";
+import { render } from '@testing-library/react';
 
 @injectable()
 export class FinderWidget extends ReactWidget {
     static readonly ID = "finder:widget";
     static readonly LABEL = "Finder";
+    
+
+    constructor() {
+        super();
+        // this.state = {
+        //     path: "",
+        //     code: "",
+        // }
+    }
+/*
+
+function changeValeurInitial(e: React.ChangeEvent<HTMLInputElement>) {
+        this.setState({valeu: e.target.value})
+}
+
+    render(): React.ReactNode {
+        return (
+            <div id="widget-container">
+               <input type="email" name="" id="" value={this.state.valeu}/>
+                <TicketForm/>
+            </div>
+        );
+    }
+*/
+
     
 
     @inject(MessageService)

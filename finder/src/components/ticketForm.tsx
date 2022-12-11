@@ -37,6 +37,8 @@ export default function TicketForm() {
     /**
      * Redu react component
      */
+
+    
     return (
         <form className="form-finder">
             <input
