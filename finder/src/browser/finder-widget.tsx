@@ -18,6 +18,7 @@ export class FinderWidget extends ReactWidget {
     @inject(MessageService)
     protected readonly messageService!: MessageService;
 
+    
     @postConstruct()
     protected async init(): Promise<void> {
         this.id = FinderWidget.ID;
@@ -26,11 +27,15 @@ export class FinderWidget extends ReactWidget {
         this.title.closable = true;
         this.title.iconClass = "fa fa-window-maximize"; // example widget icon.
         this.update();
-        
     }
 
-    render(): React.ReactElement {
+    /**
+     * Code 1
+     *  Affichage du composant React dans le widget
+     * 
+     *  */
 
+    render(): React.ReactElement {
         return (
             <div id="widget-container">
                 <TicketForm/>
@@ -39,7 +44,7 @@ export class FinderWidget extends ReactWidget {
     }
 
     protected displayMessage(information : string): void {
-        this.messageService.info(information,);
+        this.messageService.info(information);
     }
 
     protected onActivateRequest(msg: Message): void {
@@ -49,4 +54,6 @@ export class FinderWidget extends ReactWidget {
             htmlElement.focus();
         }
     }
+
+    // Jusqu'ici, le code est identique à celui du widget de base
 }
