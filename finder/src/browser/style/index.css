@@ -1,0 +1,22 @@
+#widget-container h2 {
+    color: var(--theia-ui-font-color1);
+    font-size: 12px;
+    font-weight: 400;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.form-finder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 1vh;
+}
+
+.form-finder input {
+    margin: 0vh 1vh 1vh 1vh;
+}
+
+.form-finder button {
+    margin: 0vh 1vh 1vh 1vh;
+}
