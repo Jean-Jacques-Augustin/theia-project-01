@@ -16,7 +16,7 @@
           "tena_start": "cd finder && yarn build && theia rebuild:browser && cd ./../browser-app && yarn prepare && yarn start"
      },
      "devDependencies": {
-          "lerna": "2.4.0"
+          "lerna": "6.1.0"
      },
      "workspaces": [
           "finder",
