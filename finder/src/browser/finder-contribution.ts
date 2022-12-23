@@ -17,6 +17,7 @@ export class FinderContribution extends AbstractViewContribution<FinderWidget> {
      * its location `area` (`main`, `left`, `right`, `bottom`), `mode`, and `ref`.
      * 
      */
+    
     constructor() {
         super({
             widgetId: FinderWidget.ID,

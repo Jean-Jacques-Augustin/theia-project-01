@@ -1,14 +1,16 @@
 import { inject } from "@theia/core/shared/inversify";
+import {MessageService} from "@theia/core";
 
-class MessageService {
-    
+class DisplayMessage {
+
     @inject(MessageService)
     protected readonly messageService: MessageService;
 
-    showMessage(message: string): void {
-        this.messageService.showMessage(message);
+    showErrorMessage(message: string) {
+        this.messageService.error(message , {timeout : 3000});
     }
+
 
 }
 
-export default MessageService;
+export default DisplayMessage;
